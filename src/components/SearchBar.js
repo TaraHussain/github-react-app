@@ -1,7 +1,6 @@
-import Axios from "axios";
+import axios from "axios";
 import React, { useState } from "react";
 import Results from "./Results";
-import axios from "axios";
 
 const SearchBar = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -14,7 +13,7 @@ const SearchBar = () => {
     console.log(searchInput);
 
     try {
-      const result = await Axios(
+      const result = await axios(
         `https://api.github.com/users/${searchInput}/repos`
       );
       setRepos(result);

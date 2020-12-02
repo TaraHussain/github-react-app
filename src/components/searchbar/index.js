@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import Results from "./Results";
+import Results from "../results";
 
 const SearchBar = () => {
   const [searchInput, setSearchInput] = useState("");

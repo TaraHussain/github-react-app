@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
 import { SearchBar } from "./components";
+import { Header } from "./components";
 // import Results from "./components/Results";
 
 function App() {
   return (
     <div>
-      <h1>Repo Search</h1>
+      <Header />
       <SearchBar />
     </div>
   );

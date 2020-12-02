@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  background: lightgray;
+}
+
+.img {
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 60px;
+  width: 90px;
+}
+
+h1 {
+  font-size: 40px;
+}

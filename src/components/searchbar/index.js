@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Results from "../results";
+import "./search.css";
 
 const SearchBar = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -24,15 +25,33 @@ const SearchBar = () => {
 
   return (
     <>
-      <div>
+      {/* <div>
         <input
+          id="searchbar"
           type="text"
           placeholder="Search"
           value={searchInput}
           onChange={handleChange}
         />
-        <button onClick={handleClick}>Search</button>
+        <button id="button" onClick={handleClick}>
+          Search
+        </button>
+      </div> */}
+      <div className="wrap">
+        <div className="search">
+          <input
+            type="text"
+            className="searchTerm"
+            placeholder="Enter username"
+            value={searchInput}
+            onChange={handleChange}
+          />
+          <button type="submit" className="searchButton" onClick={handleClick}>
+            search
+          </button>
+        </div>
       </div>
+
       <Results repos={repos} />
     </>
   );
